@@ -1,0 +1,11 @@
+@font-face{
+	font-family: "ProximaNova";
+src: url("../fonts/ProximaNova-Semibold.otf") format("Open-type");
+src:url("../fonts/Proximanova-regular-webfont.ttf") format("truetype"),
+	url("../fonts/Proximanova-regitalic-webfont.ttf") format("truetype"),
+	url("../fonts/Proximanova-light-webfont.ttf") format("truetype"),
+	url("../fonts/Proximanova-bold-webfont.ttf") format("truetype");
+}
+body{
+font-family: "ProximaNova" !important; 
+}
