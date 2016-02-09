@@ -1,0 +1,69 @@
+@font-face{
+	font-family: "ProximaNova-Semibold";
+	src: url("../fonts/ProximaNova-Semibold.otf") format("Open-type");
+}
+
+@font-face{
+	font-family: "Proximanova-regular";
+	src:url("../fonts/Proximanova-regular-webfont.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "ProximaNova-regitalic";
+	src:url("../fonts/Proximanova-regitalic-webfont.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "ProximaNova-light";
+	src:url("../fonts/Proximanova-light-webfont.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "ProximaNova-bold";
+	src:url("../fonts/Proximanova-bold-webfont.ttf") format("truetype");
+}
+
+
+/*----------------------body-------------*/
+
+
+
+
+/*--------- tipografía----------*/
+
+h1{
+	color: #002366;
+	font-family: "Proximanova-regular";
+	font-size: 3.125em;
+}
+
+h2 {
+	font-family: "ProximaNova-light";
+	font-size:2.813em; 
+}
+
+h3{
+	font-family: "ProximaNova-light";
+	font-size:1.875em;
+}
+
+body{
+	margin:auto;
+}
+
+
+/*--------texto en concept---------*/
+
+.concept p {
+	font-family: "Proximanova-regular";
+	font-size:1.125em;
+	line-height: 26px;
+}
+
+/*--------texto en viñetas---------*/
+
+.concept span{
+	font-family: "ProximaNova-light";
+	font-size:1.500em;
+}
+

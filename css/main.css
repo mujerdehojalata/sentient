@@ -1,11 +1,768 @@
 @font-face{
+	font-family: "ProximaNova-Semibold";
+	src: url("../fonts/ProximaNova-Semibold.otf") format("Open-type");
+}
+
+@font-face{
+	font-family: "Proximanova-regular";
+	src:url("../fonts/Proximanova-regular-webfont.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "ProximaNova-regitalic";
+	src:url("../fonts/Proximanova-regitalic-webfont.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "ProximaNova-light";
+	src:url("../fonts/Proximanova-light-webfont.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "ProximaNova-bold";
+	src:url("../fonts/Proximanova-bold-webfont.ttf") format("truetype");
+}
+
+
+/*----------------------body-------------*/
+
+/*-----------navbar--------------*/
+
+.container-fluid{
+	border-bottom:1px solid #e7e7e7;
+}
+.navbar{
+	margin-bottom: 0%;
+}
+.navbar-default .navbar-toggle{
+	border-color: transparent;
+	margin-left: 20px;
+}
+
+.navbar-header img{
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 600px) {
+  .navbar-header img {
+    margin-left: 25%; 
+    width: 40%;
+    height: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .divider-vertical  {
+    height: 0px
+  }
+}
+
+.navbar-default{
+	background-color: transparent;
+	border-color:transparent;
+}
+
+.divider-vertical{
+	height: 16px;
+	margin: 18px 10px;
+	border-right: 1px solid #e7e7e7;	
+}
+
+$("#mielemento").css("display", "none");
+/*--------- tipografía----------*/
+/*
+h1{
+	color: #002366;
+	font-family: "Proximanova-regular";
+	font-size: 3.125em;
+}
+
+h2 {
+	font-family: "ProximaNova-light";
+	font-size:2.813em; 
+}
+
+h3{
+	font-family: "ProximaNova-light";
+	font-size:1.875em;
+}
+
+
+body{
+	margin:auto;
+}
+
+.textorecuadro {
+	font-family: "ProximaNova-regular";
+	font-size: 14px;
+	text-align: center;
+}
+
+
+/*--------texto en concept---------*/
+
+.concept p {
+	font-family: "Proximanova-regular";
+	font-size:1.125em;
+	line-height: 26px;
+}
+
+/*--------texto en viñetas---------*/
+
+.concept span{
+	font-family: "ProximaNova-light";
+	font-size:1.500em;
+}
+
+/*------------section title----*/
+
+.title  {
+	background-image: url(../img/hero-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-size: 100% 100%;
+    padding-bottom: 15%;
+    color: white;   
+}
+
+.title h1 {
+	font-family: "Proximanova-regular";
+	line-height: 45px;
+	font-size: 50px;
+	position: relative;
+	top:90px;
+}
+
+.title img {
+    width: 35px;
+    height: 60px;
+    position: relative;
+    top: 160px;
+}
+
+
+
+/*-----------concept-----------*/
+.concept{
+	padding-top: 50px;
+}
+.concept p{
+	font-family: "Proximanova-regular";
+	text-align: center;
+	font-size: 23px;
+	color: #606060;
+}
+
+.local {
+	margin-top: 50px;
+}
+
+.concept h3 {
+	font-family: "ProximaNova-light";
+	font-size: 30px;
+	color: #002366;
+}
+.caja{
+	border: 1px solid #d0cdfa;
+	margin-top: 20%;
+	margin-bottom: 50%;
+	height: 300px;
+	width: 105%;
+	padding-right: 4%;
+	padding-left: 4%;
+	padding-top: 7%;
+}
+.caja h3 {
+	color: #979797;
+	font-weight: bold;
+}
+.caja p{
+	font-family: "Proximanova-regular";
+	text-align: center;
+	font-size: 14px;
+	color: #606060;
+}
+
+/*-------Contact-----*/
+.contactus {
+	margin-top: 3%;
+	font-family: "Proximanova-regular";
+	font-weight: bold;
+	font-size: 45px;
+}
+
+.contact h3{
+	font-family: "Proximanova-regular";
+	line-height: 10px;
+}
+
+.espacio{
+	padding-bottom: 40px;
+}
+.contact {
+	background-image:url(../img/background-contac-us.jpg);
+	background-size: cover;
+    background-size: 100% 100%;
+    padding-bottom: 20%;
+    color: white; 
+}
+
+@media (max-width: 600px) {
+  .contact  {
+    background-image: none;
+    color: black;
+  }
+}
+
+.form {
+	width: 72%;
+	padding:2%;
+	margin-top: 2%;
+	border-radius: 0px;
+	line-height: 25px;
+	color: #979797;
+	text-align: center;
+	font-size: 24px;
+}
+
+.input {
+	margin-top: 4%;
+}
+
+.btn-primary{
+	width: 50%;
+	padding:2%;
+	margin-top: 5%;
+	border-radius: 3%;
+	font-size: 24px;
+}
+
+
+::-webkit-input-placeholder {
+ font-size: 25px;
+ color: #979797;
+ text-align: center;
+}
+/*-----------footer----*/
+footer .btn{
+	text-decoration: none;
+	color: gray;
+}
+
+footer img{
+	padding-left:5px;
+	padding-right: 5px;
+} 
+.raya {
+	margin-left: 25px;
+}
+ footer p{
+ 	margin-top: 30px;
+ 	margin-bottom: 30px;
+ }
+
+ footer h5{
+ 	color: #979797;
+ }
+
+
+
+
+/*----------preloader---
+
+body {
+  background: #1abc9c;
+  overflow: hidden
+}
+
+@-webkit-keyframes span {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.6);
+    transform: scale(.6);
+  }
+  60% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes span {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.6);
+    transform: scale(.6);
+  }
+  60% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes line {
+  0% {
+    width: 30vmin;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    width: 400vmin;
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 30vmin;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    width: 400vmin;
+  }
+}
+
+@-webkit-keyframes inner {
+  from {
+    width: 16%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes inner {
+  from {
+    width: 16%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+#preloader {
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+#preloader span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6vmin;
+  line-height: 6vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  margin-top: -3vmin;
+  -webkit-animation: span 1.333s linear infinite;
+  animation: span 1.333s linear infinite;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.spinner .line {
+  position: absolute;
+  height: 0.8vmin;
+  -webkit-animation: line 8s linear infinite;
+  animation: line 8s linear infinite;
+}
+
+.spinner .line::before,
+.spinner .line::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: currentColor;
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  -webkit-animation: inner 8s linear infinite;
+  animation: inner 8s linear infinite;
+}
+
+.spinner .line::before {
+  -webkit-transform: translateX(-0.5em) rotate(30deg) translateX(0.1em);
+  -ms-transform: translateX(-0.5em) rotate(30deg) translateX(0.1em);
+  transform: translateX(-0.5em) rotate(30deg) translateX(0.1em);
+}
+
+.spinner .line::after {
+  -webkit-transform: translateX(-0.5em) rotate(-30deg) translateX(0.1em);
+  -ms-transform: translateX(-0.5em) rotate(-30deg) translateX(0.1em);
+  transform: translateX(-0.5em) rotate(-30deg) translateX(0.1em);
+}
+
+.spinner .line:nth-child(1) {
+  -webkit-transform: translate(-50%, -50%) rotate(60deg);
+  -ms-transform: translate(-50%, -50%) rotate(60deg);
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.spinner .line:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(120deg);
+  -ms-transform: translate(-50%, -50%) rotate(120deg);
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.spinner .line:nth-child(3) {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+  -ms-transform: translate(-50%, -50%) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.spinner .line:nth-child(4) {
+  -webkit-transform: translate(-50%, -50%) rotate(240deg);
+  -ms-transform: translate(-50%, -50%) rotate(240deg);
+  transform: translate(-50%, -50%) rotate(240deg);
+}
+
+.spinner .line:nth-child(5) {
+  -webkit-transform: translate(-50%, -50%) rotate(300deg);
+  -ms-transform: translate(-50%, -50%) rotate(300deg);
+  transform: translate(-50%, -50%) rotate(300deg);
+}
+
+.spinner .line:nth-child(6) {
+  -webkit-transform: translate(-50%, -50%) rotate(360deg);
+  -ms-transform: translate(-50%, -50%) rotate(360deg);
+  transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.spinner:nth-child(1) .line,
+.spinner:nth-child(1) .line::before,
+.spinner:nth-child(1) .line::after {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.spinner:nth-child(2) .line,
+.spinner:nth-child(2) .line::before,
+.spinner:nth-child(2) .line::after {
+  -webkit-animation-delay: -1.33333s;
+  animation-delay: -1.33333s;
+}
+
+.spinner:nth-child(3) .line,
+.spinner:nth-child(3) .line::before,
+.spinner:nth-child(3) .line::after {
+  -webkit-animation-delay: -2.66666s;
+  animation-delay: -2.66666s;
+}
+
+.spinner:nth-child(4) .line,
+.spinner:nth-child(4) .line::before,
+.spinner:nth-child(4) .line::after {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+}
+
+.spinner:nth-child(5) .line,
+.spinner:nth-child(5) .line::before,
+.spinner:nth-child(5) .line::after {
+  -webkit-animation-delay: -5.33333s;
+  animation-delay: -5.33333s;
+}
+
+.spinner:nth-child(6) .line,
+.spinner:nth-child(6) .line::before,
+.spinner:nth-child(6) .line::after {
+  -webkit-animation-delay: -6.66666s;
+  animation-delay: -6.66666s;
+}
+
+.spinner:nth-child(2n) {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+--*/ 
+
+/*------------stilos personas y aboutus ...
+@font-face{
 	font-family: "ProximaNova";
 src: url("../fonts/ProximaNova-Semibold.otf") format("Open-type");
-src:url("../fonts/Proximanova-regular-webfont.ttf") format("truetype"),
-	url("../fonts/Proximanova-regitalic-webfont.ttf") format("truetype"),
-	url("../fonts/Proximanova-light-webfont.ttf") format("truetype"),
-	url("../fonts/Proximanova-bold-webfont.ttf") format("truetype");
 }
+@font-face{
+	font-family: "Proximanova-regular";
+	src:url("../fonts/Proximanova-regular-webfont.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Proximanova-regitalic";
+	src:url("../fonts/Proximanova-regitalic-webfont.ttf") format("truetype");
+}
+@font-face{
+	font-family: "ProximaNova-light";
+	src:url("../fonts/Proximanova-light-webfont.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Proximanova-bold";
+	src:url("../fonts/Proximanova-bold-webfont.ttf") format("truetype");
+}
+	
 body{
 font-family: "ProximaNova" !important; 
 }
+
+/*-------------------Cabecera----------*/
+.container-fluid{
+	border-bottom:1px solid #e7e7e7;
+}
+.navbar{
+	margin-bottom: 0%;
+}
+.navbar-default .navbar-toggle{
+	border-color: transparent;
+}
+.navbar-default{
+	background-color: transparent;
+	border-color:transparent;
+}
+.navbar-nav>li>a{
+	padding-top: 1.6875em;
+	padding-bottom: 1.6875em;
+}
+
+.divider-vertical{
+	height: 1em;
+	margin: 1.6875em 0.625em;
+	border-right: 1px solid #e7e7e7;
+}
+/*-----------------secion1-------------*/
+.comillas{
+	width: 18px;
+	height: 18px;
+
+}
+h1{
+	color: #002366;
+	font-family: "Proximanova-regular";
+	font-size: 3.125em;
+}
+
+h2 {
+	font-family: "ProximaNova-light";
+	font-size:2.813em; 
+}
+
+h3{
+	font-family: "ProximaNova-light";
+	font-size:1.875em;
+}
+
+body{
+	margin:auto;
+}
+
+
+/*--------texto en concept---------*/
+
+.texto{
+	margin-bottom: 10px;
+}
+.texto2{
+	margin-bottom: 10px;
+}
+.texto2 p {
+	font-family: "Proximanova-regular";
+	font-size:18px;
+}
+
+/*--------texto en viñetas---------*/
+
+.texto p{
+	font-family: "ProximaNova-light";
+	font-size:24px;
+}
+.texto span{
+	padding-right: 10px;
+}
+/*---------------seccion2-----------------------------*/
+.seccion2{
+	background-image: url("../img/background-about-us.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	color: white;
+	padding-bottom: 50px;
+	background-size: cover;
+} 
+.seccion2 h2{
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+.seccion2 .read{
+	text-decoration: none;
+	padding: 10px 10px;
+	background: #002366;
+	border-radius: 5px;
+	font-size: 28px;
+	font-family: "ProximaNova-light";
+	color: white;
+
+	
+}
+.parrafo{
+	margin-top: 20px ;
+	margin-bottom: 30px;
+
+}
+ .seccion2 p{
+ 	margin: 5px;
+ 	font-family:"Proximanova-regular";
+ 	font-size:16px;
+ }
+
+ .apply p{
+ 	font-family:"ProximaNova-light";
+ 	font-size: 24px;
+ }
+ .apply a {
+ 	padding: 10px 60px;
+ 	background: #179AD6;
+ 	font-size: 24px;
+ 	color: #fff;
+ 	border-radius: 5px;
+ 	text-decoration: none;
+	margin-top: 20px;
+
+
+
+ }
+ .contacto p{
+	font-family:"ProximaNova-light";
+ 	font-size: 24px;
+ }
+
+ .contacto a {
+ 	padding: 10px 20px;
+ 	border: 2px solid white;
+ 	font-size: 24px;
+ 	color: #fff;
+ 	border-radius: 5px;
+	
+ 	text-decoration: none;
+ }
+ .forma{
+ 	margin-top: 20px;
+ 	margin-bottom: 10px;
+ }
+
+ /*------------------SECCION3-----------*/
+.seccion3{
+	background-color: rgba(96, 96, 96, 0.1);
+	width: 100%;
+	 
+
+}
+.container3 {
+	width: 50%;
+	margin: 0 auto;
+
+}
+.container3 h2{
+	color: #002366;
+	padding: 20px;
+	margin:0;
+}
+.carrers{
+	background: #179AD6;
+	padding: 10px 60px;
+	color: white;
+	border-radius: 5px;
+	font-size: 24px;
+	font-family: "ProximaNova-light"
+}
+.container3 p{
+	font-family: "Proximanova-regular";
+	font-size: 18px;
+
+}
+.continer3 h3{
+	color: #002366;
+	
+}
+
+.container3 img{
+	background: white;
+	padding: 2px;
+	width: 100%
+}
+.cuadro{
+	background: white;
+	width: 100%;
+	text-align: center;
+	height: 76px;
+	margin-bottom: 30px;
+}
+.cuadro p{
+	padding-top: 10px;
+	margin: 0;
+	color:black;
+}
+.cuadro a{
+	text-decoration: none;
+	color: #979797;
+
+}
+.container4{
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+
+.founder{
+		width: 100%;
+		padding: 10px;
+}
+
+.textofounder p{
+	text-align: justify;
+	margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .textofounder p {
+    text-align: center;
+  }
+}
+
+
+.textofounder{
+padding-top: 20px;
+padding-bottom: 30px;
+}
+
+.division{
+	border-bottom: 1px solid #979797;
+}
+
